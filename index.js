@@ -15,7 +15,7 @@
  * @return {Number} ダメージ
  */
 // functino effectiveDamage(power, armor, armorPenetration) {
-functinon effectiveDamage(power, armor, armorPenetration) {
+function effectiveDamage(power, armor, armorPenetration) {
   let effectiveArmor = normalize(armor) - normalize(armorPenetration);
   effectiveArmor = effectiveArmor <= 0 ? 0 : effectiveArmor;
   const damageDecrease = effectiveArmor / (100 + effectiveArmor);
